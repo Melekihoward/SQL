@@ -1,0 +1,14 @@
+CREATE TABLE clothing_brand (Id INTEGER PRIMARY KEY , Name TEXT, Quantity_sold INTEGER, Price INTEGER);
+INSERT INTO clothing_brand  VALUES (1, "T-shirts",104,30);
+INSERT INTO clothing_brand VALUES (2, "Sweatpants",32,25);
+INSERT INTO clothing_brand VALUES (3, "Hoodies",39,55);
+INSERT INTO clothing_brand VALUES (4, "Shoes", 252,110);
+INSERT INTO clothing_brand VALUES (5, "Socks", 68,15);
+INSERT INTO clothing_brand VALUES (6, "Underwear",52,7);
+INSERT INTO clothing_brand VALUES (7, "Sweaters", 22,25);
+INSERT INTO clothing_brand VALUES (8, "Long Sleeve Shirts",48,30);
+INSERT INTO clothing_brand VALUES (9, "Shorts",132,35);
+INSERT INTO clothing_brand VALUES (10, "Jeans",47,45);
+SELECT * FROM clothing_brand ORDER BY price;
+--what products sold over 100 units?
+SELECT * FROM clothing_brand WHERE Quantity_sold > 100 ORDER BY Quantity_sold;
